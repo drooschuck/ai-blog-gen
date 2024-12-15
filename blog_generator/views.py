@@ -73,7 +73,8 @@ def download_audio(link):
 def get_transcription(link):
     audio_file = download_audio(link)
     from decouple import config
-    aai.api_key = settings.OAAI_API_KEY
+    aai.api_key = settings.AAI_API_KEY
+
 
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(audio_file)
