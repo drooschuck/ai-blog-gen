@@ -10,8 +10,8 @@ fix_apt_lists() {
     # Check if the directory exists
     if [ ! -d "$dir" ]; then
         echo "Directory $dir is missing. Creating it..."
-        sudo mkdir -p "$dir"
-        sudo chmod 755 "$dir"
+         mkdir -p "$dir"
+         chmod 755 "$dir"
         echo "Directory $dir created and permissions set."
     else
         echo "Directory $dir already exists."
