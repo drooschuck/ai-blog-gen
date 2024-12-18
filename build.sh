@@ -3,6 +3,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -o errexit
 
+export CARGO_HOME=/app/.cargo
+export CARGO_TARGET_DIR=/app/target
+
 # Update package list and install necessary packages
 apt-get update && apt-get install -y python3 python3-pip python3-venv
 
