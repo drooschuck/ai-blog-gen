@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Exit immediately if a command exits with a non-zero status
-set -e
+#set -e
 
 # Print each command before executing it
-set -x
+#set -x
 
 # Step 1: Set up Python environment
 # You can specify the Python version you want to use
