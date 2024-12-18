@@ -3,6 +3,28 @@
 # Exit immediately if a command exits with a non-zero status
 set -o errexit
 
+# Function to fix APT lists directory
+fix_apt_lists() {
+    local dir="/var/lib/apt/lists/partial"
+
+    # Check if the directory exists
+    if [ ! -d "$dir" ]; then
+        echo "Directory $dir is missing. Creating it..."
+        sudo mkdir -p "$dir"
+        sudo chmod 755 "$dir"
+        echo "Directory $dir created and permissions set."
+    else
+        echo "Directory $dir already exists."
+    fi
+}
+
+# Fix APT lists directory
+fix_apt_lists
+
+# Update package list
+echo "Updating package lists..."
+sudo apt-get update
+
 # Update package list and install necessary packages
 apt-get update
 apt-get install -y python3 python3-pip python3-venv
