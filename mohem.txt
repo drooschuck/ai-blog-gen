@@ -1,0 +1,11 @@
+OPENAI_API_KEY=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
+AAI_API_KEY=5fa3eb5dd9744e0c83e5eb
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=defaultdb
+DB_USER=avnadmin
+DB_PASSWORD=AVNS_nVWePWIDvsnGfEWrMEi
+DB_HOST=aiblog1-aiblog1.e.aivencloud.com
+DB_PORT=28418
+ALLOWED_HOSTS=127.0.0.1, ai-blog-gen.onrender.com
+SECRET_KEY = 'django-insecure-3@7%!_)(&g2a5^&)13@5u*ss)wr!vf%2gy1isj_ujeu^f)82+)'
+DEBUG = True
