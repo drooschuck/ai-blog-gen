@@ -36,7 +36,7 @@ dataclasses-json==0.6.7
 diff-match-patch==20241021
 distlib==0.3.9
 distro==1.9.0
-Django
+Django==4.1.7
 django-import-export
 django-widget-tweaks
 dnspython==2.7.0
